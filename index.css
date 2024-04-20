@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--ff: 'Montserrat', sans-serif;
+
+	--color-accent: #fcaf02;
+	--color-light: white;
+	--color-dark: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--ff);
+	font-weight: 400;
+	font-style: normal;
+	color: var(--color-light);
+	background-color: var(--color-dark);
+	line-height: 1.2;
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+}
+
+h1,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h3{
+    font-weight: 700;
+}
+
+input{
+    font-family:var(--ff) ;
+}
+
+input:focus {
+	outline: none;
+}
+
+::placeholder {
+	color: var(--color-accent);
+}
+
+.button {
+	padding: 0.6em 2em;
+	border: none;
+	background-color: var(--color-accent);
+	font-weight: 700;
+	font-family: var(--ff);
+	border-radius: 50px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	background-color: var(--color-accent);
+	color: var(--color-dark);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 2.5em;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 1em;
+}
+
+nav ul li {
+	cursor: pointer;
+}
+
+header {
+	padding: 0 2.5em;
+	display: flex;
+}
+
+.header__section1 {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	align-items: start;
+}
+
+.header__section2 {
+	min-width: 300px;
+	flex: 1;
+}
+
+main {
+	padding: 0 2.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.main__heading {
+	color: var(--color-accent);
+}
+
+.main__form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.main__input {
+	padding: 0.5em 2em;
+	background-color: var(--color-dark);
+	color: var(--color-accent);
+	border: 2px solid var(--color-accent);
+	border-radius: 100px;
+}
+
+.main__submit-btn {
+	margin: 0 auto;
+}
+
+.main__input-group {
+	display: flex;
+	gap: 2em;
+}
+
+.main__input-group input {
+	flex: 1;
+}
+
+footer {
+	padding: 0 2.5em;
+}
+
+table {
+	width: 100%;
+	color: var(--color-accent);
+}
+
+table,
+th,
+td {
+	border: 2px solid var(--color-accent);
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+}
+
+td,
+th {
+	padding: 1em;
+}
+
+.align-center {
+	text-align: center;
+}
+
+tfoot {
+	background-color: var(--color-accent);
+	color: var(--color-dark);
+}
+
+/* tfoot td {
+	border-color: var(--color-dark);
+} */
+
+.border-color-right {
+	border-right: 2px solid var(--color-dark);
+}

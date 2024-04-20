@@ -4,11 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Startup</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
 		<nav>
-			<h2>Startup</h2>
+			<h3>Startup</h3>
 			<ul>
 				<li>Home</li>
 				<li>About Us</li>
@@ -17,7 +23,7 @@
 			</ul>
 		</nav>
 		<header>
-			<section>
+			<section class="header__section1">
 				<h1>Startup Landing Page</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -28,64 +34,64 @@
 					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 					culpa qui officia deserunt mollit anim id est laborum.
 				</p>
-				<button>Login</button>
+				<button class="button">Login</button>
 			</section>
-			<section>
+			<section class="header__section2">
 				<img src="jeff.png" alt="ceo" />
 			</section>
 		</header>
 		<main>
-			<h1>Contact Us</h1>
-			<form>
-				<input type="text" placeholder="Name" />
-				<input type="email" placeholder="Email" />
-				<div>
-					<input type="number" placeholder="Mobile Number" />
-					<input type="text" placeholder="City" />
+			<h1 class="main__heading">Contact Us</h1>
+			<form class="main__form">
+				<input class="main__input" type="text" placeholder="Name" />
+				<input class="main__input" type="email" placeholder="Email" />
+				<div class="main__input-group">
+					<input class="main__input" type="number" placeholder="Mobile Number" />
+					<input class="main__input" type="text" placeholder="City" />
 				</div>
-				<input type="submit" value="Submit Form" />
+				<input class="button main__submit-btn" type="submit" value="Submit Form" />
 			</form>
 		</main>
 		<footer>
 			<table>
 				<thead>
 					<tr>
-						<th>SNO.</th>
+						<th class="align-center">SNO.</th>
 						<th>Startup Name</th>
 						<th>Startup Description</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>1.</td>
+						<td class="align-center">1.</td>
 						<td>WowIndia</td>
 						<td>A startup with WOW Ideas.</td>
 					</tr>
 					<tr>
-						<td>2.</td>
+						<td class="align-center">2.</td>
 						<td>Lorem Ipsum</td>
 						<td>Lorem Ipsum Text</td>
 					</tr>
 					<tr>
-						<td>3.</td>
+						<td class="align-center">3.</td>
 						<td>Lorem Ipsum</td>
 						<td>Lorem Ipsum Text</td>
 					</tr>
 					<tr>
-						<td>4.</td>
+						<td class="align-center">4.</td>
 						<td>Lorem Ipsum</td>
 						<td>Lorem Ipsum Text</td>
 					</tr>
 					<tr>
-						<td>5.</td>
+						<td class="align-center">5.</td>
 						<td>Lorem Ipsum</td>
 						<td>Lorem Ipsum Text</td>
 					</tr>
 				</tbody>
 				<tfoot>
 					<tr>
-						<td>00.</td>
-						<td>Final Footer</td>
+						<td class="align-center border-color-right">00.</td>
+						<td class="border-color-right">Final Footer</td>
 						<td>Lorem Ipsum Text</td>
 					</tr>
 				</tfoot>
