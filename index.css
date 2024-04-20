@@ -152,10 +152,13 @@ table {
 }
 
 table,
-th,
-td {
+th{
 	border: 2px solid var(--color-accent);
 	border-collapse: collapse;
+}
+
+td{
+    border-right: 2px solid var(--color-accent);
 }
 
 th {
@@ -167,8 +170,8 @@ th {
 	padding: 1em;
 }
 
-.align-center {
-	text-align: center;
+tr td:first-child,th:first-child{
+    text-align: center;
 }
 
 tfoot {
@@ -176,10 +179,11 @@ tfoot {
 	color: var(--color-dark);
 }
 
-/* tfoot td {
+tfoot td {
 	border-color: var(--color-dark);
-} */
-
-.border-color-right {
-	border-right: 2px solid var(--color-dark);
 }
+
+tfoot td:last-child{
+	border-color: var(--color-accent);
+}
+
